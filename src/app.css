@@ -1,9 +1,24 @@
-.wrapper {
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.idSpan {
-    margin-right: 10px;
+main {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0.2)), url(./assets/pexels.jpg);
+}
+
+.wrapper {
+    height: 500px;
+    position: relative;
+}
+
+.wrapper div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main h1 {
+    color: white;
+    margin-bottom: 10px;
 }
