@@ -1,7 +1,10 @@
+import React from 'react';
+import { CounterContext } from '../../contexts';
 import { Button } from "../Button";
 import "./index.css";
 
 export const Header = ({ children }) => {
+    const { count } = React.useContext(CounterContext);
     return (
         <header>
             <nav>
@@ -10,7 +13,7 @@ export const Header = ({ children }) => {
                         <a href="/">{children}</a>
                     </li>
                     <li>
-                        <a href="/home">Home</a>
+                        <a href="/home">Home {count}</a>
                     </li>
                     <li>
                         <a href="/about">About</a>
